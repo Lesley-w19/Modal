@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.modal-wrapper{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: url(./images/1920x1200\ Food\ Coffee.jpg);
+    background-repeat: no-repeat;
+    transition: 0s ease-in-out;
+    /* visibility: visible; */
+    /* z-index: -10; */
+    visibility: hidden;
+    z-index: 10;
+}
+.modal{
+    width: 40vw;
+    padding: 1.8rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.925);
+    border-radius: .5rem;
+}
+.modal h2{
+    margin: 1rem auto;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color:darkslateblue;
+}
+.modal-btn{
+    margin: 1.5rem auto 1rem auto;
+    padding: .4rem .8rem;
+    outline: none;
+    background: rosybrown;
+    /* background: rgba(74, 66, 233, 0.767); */
+    cursor: pointer;
+    border-radius: .3rem;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    border: .1rem solid transparent;
+    color: #222;
+    transition: .5s ease-in-out;
+}
+.modal-btn:hover{
+    background: rgba(74, 66, 233, 0.767);
+    color: white;
+    /* background-color:rgba(188, 143, 143, 0.301) ; */
+    /* color:#222 ; */
+    font-size: 1rem;
+    /* transition: .5s ease-in-out; */
+
+}
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(204, 154, 154, 0.849);
+    display: grid;
+    place-items: center;
+    transition: 0s ease-in-out;
+    /* visibility: hidden; */
+    /* z-index: 10; */
+    visibility: visible;
+    z-index: -10;
+}
+.modal-over{
+    width: 40vw;
+    padding: 1.5rem 1.8rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.952);
+    border-radius: .35rem;
+    position: relative;
+}
+.modal-over button{
+    margin: 1rem 1rem;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    padding: .2rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+.modal-over .fa{
+    font-size: 1.5rem;
+    color: red;
+    transition: .4s ease-in-out;
+
+}
+.modal-over .fa:hover{
+    font-size: 1.8rem;
+    color: darkred;
+    transform: rotate(-90deg);
+}
+.modal-over .about{
+    margin: 2.7rem .6rem .8rem .6rem;
+    padding: .3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    line-height: 1.5rem;
+    color:rgba(74, 66, 233, 0.925);
+}
+
+.open-modal{
+    visibility: visible;
+    z-index: 10;
+}
+
+.open-overlay{
+    visibility: visible;
+    z-index: 10;
+}
